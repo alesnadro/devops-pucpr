@@ -26,7 +26,6 @@ jobs:
               name: Checkout
               uses: actions/checkout@v4
           -
-                
               # add support for more plataforms with QEMU (optional)
               # https://github.com/docker/setup-qemu-action
               name: Set up QEMU
@@ -57,3 +56,4 @@ jobs:
       run: |
         pip install pytest pytest-cov pytest-asyncio
         pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+
