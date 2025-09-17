@@ -21,7 +21,7 @@ def test_create_estudante():
 
 
 def test_update_estudante_negativo():
-    result = not update_estudante(-5)
+    result = update_estudante(-5)
     yield result
     assert not result
 
